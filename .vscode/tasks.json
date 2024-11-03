@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compile Java",
+        "type": "shell",
+        "command": "javac",
+        "args": [
+          "--module-path",
+          "/home/vinay/javafx/openjfx-23.0.1_linux-x64_bin-sdk/javafx-sdk-23.0.1/lib",
+          "--add-modules",
+          "javafx.controls,javafx.fxml",
+          "-source",
+          "21",
+          "-target",
+          "21",
+          "-d",
+          "out",
+          "src/main/java/com/agriculture/app/AuthService.java",
+          "src/main/java/com/agriculture/app/Farmer.java",
+          "src/main/java/com/agriculture/app/FarmerService.java",
+          "src/main/java/com/agriculture/app/Main.java",
+          "src/main/java/com/agriculture/app/MainController.java",
+          "src/main/java/com/agriculture/app/PersonalizedUpdateService.java",
+          "src/main/java/com/agriculture/app/Scheme.java",
+          "src/main/java/com/agriculture/app/SchemeService.java",
+          "src/main/java/com/agriculture/app/SQLiteSetup.java"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
